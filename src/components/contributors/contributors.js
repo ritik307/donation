@@ -5,9 +5,9 @@ import AdComponent from "../AdComponent/AdComponent";
 import "./donation.css";
 import Card from "./Card";
 import names from "./names";
+import { Button } from "react-bootstrap";
 
 const Contributor = () => {
-
   return (
     <div>
       <div className={style["go_back"]}>
@@ -45,7 +45,26 @@ const Contributor = () => {
             <h3 class="raised">$20&nbsp;raised </h3>
           </div>
 
-          <h3 class="goal">Goal: $100</h3>
+          <h3 class="goal">Goal: $50</h3>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            textAlign: "center",
+            marginTop: "70px",
+            justifyContent: "center",
+            gap: "20px",
+            flexWrap: "wrap",
+            alignItems: "center",
+          }}
+        >
+          <h1>Method to Donate:</h1>
+          <Button danger style={{ width: "150px", height: "40px" }}>
+            Kofi
+          </Button>
+          <Button danger style={{ width: "150px", height: "40px" }}>
+            Paypal
+          </Button>
         </div>
         <div style={{ textAlign: "center", marginTop: "70px" }}>
           <h1>List Of Donators</h1>
@@ -56,7 +75,7 @@ const Contributor = () => {
               width: "80%",
               flexWrap: "wrap",
               alignItems: "center",
-              justifyContent: "space-between",
+              justifyContent: "center",
               gap: "30px",
               padding: "100px 0",
             }}

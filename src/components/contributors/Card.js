@@ -6,7 +6,7 @@ const Card = (props) => {
       style={{
         boxShadow: "0px 4px 5px 0px rgba(0,0,0,0.75)",
         display: "flex",
-        width: "500px",
+        width: "800px",
         textAlign: "center",
         justifyContent: "center",
         alignItems: "center",
