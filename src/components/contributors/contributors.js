@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import style from "./contributors.module.css";
 import Image from "./logo.png";
 import AdComponent from "../AdComponent/AdComponent";
