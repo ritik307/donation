@@ -1,11 +1,5 @@
 const names = [
-  "aditya",
-  "arun",
-  "aditya",
-  "arun",
-  "aditya",
-  "arun",
-  "aditya",
-  "arun",
+   "MissingNerd",
+   "Evan Krimpen",
 ];
 export default names;

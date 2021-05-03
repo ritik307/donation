@@ -58,16 +58,16 @@ const Contributor = () => {
             alignItems: "center",
           }}
         >
-          <h1>Method to Donate:</h1>
+          <h1>Methods of Donation:</h1>
           <Button danger style={{ width: "150px", height: "40px" }}>
-            Kofi
+            <a href="https://ko-fi.com/lordshen">Ko-fi</a>
           </Button>
           <Button danger style={{ width: "150px", height: "40px" }}>
-            Paypal
+            <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">Paypal</a>
           </Button>
         </div>
         <div style={{ textAlign: "center", marginTop: "70px" }}>
-          <h1>List Of Donators</h1>
+          <h1>Top Donators this month</h1>
           <div
             style={{
               display: "flex",
