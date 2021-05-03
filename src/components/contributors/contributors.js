@@ -46,11 +46,12 @@ const Contributor = () => {
 
           <h3 class="goal">Goal: $50</h3>
         </div>
+
         <div
           style={{
             display: "flex",
             textAlign: "center",
-            marginTop: "70px",
+            marginTop: "30px",
             justifyContent: "center",
             gap: "20px",
             flexWrap: "wrap",
@@ -58,13 +59,18 @@ const Contributor = () => {
           }}
         >
           <h1>Methods of Donation:</h1>
-          <Button danger style={{ width: "150px", height: "40px" }}>
-            <a href="https://ko-fi.com/lordshen">Ko-fi</a>
-          </Button>
-          <Button danger style={{ width: "150px", height: "40px" }}>
-            <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">Paypal</a>
-          </Button>
+          <a href="https://ko-fi.com/lordshen">
+            <Button danger style={{ width: "150px", height: "40px" }}>
+              Ko-fi
+            </Button>
+          </a>
+          <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
+            <Button danger style={{ width: "150px", height: "40px" }}>
+              Paypal
+            </Button>
+          </a>
         </div>
+        <hr style={{ width: "80%", margin: "0 auto" }} width="1" size="500" />
         <div style={{ textAlign: "center", marginTop: "70px" }}>
           <h1>Top Donators this month</h1>
           <div
@@ -76,7 +82,7 @@ const Contributor = () => {
               alignItems: "center",
               justifyContent: "center",
               gap: "30px",
-              padding: "100px 0",
+              padding: "60px 0",
             }}
           >
             {names.map((name) => {

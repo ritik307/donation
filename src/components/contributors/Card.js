@@ -13,7 +13,7 @@ const Card = (props) => {
         height: "50px",
       }}
     >
-      {props.name}
+      👑 {props.name}
     </div>
   );
 };
