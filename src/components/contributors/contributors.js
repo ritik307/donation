@@ -1,14 +1,39 @@
+import React, { useState } from "react";
 import style from "./contributors.module.css";
 import Image from "./logo.png";
 import AdComponent from "../AdComponent/AdComponent";
 import "./donation.css";
 import Card from "./Card";
+import Modal from "./Modal";
 import names from "./names";
 import { Button } from "react-bootstrap";
 
 const Contributor = () => {
+  const [vis, setvis] = useState(false);
+  const [add, setadd] = useState("");
+  const [crypto, setCrypto] = useState("");
+  const bitclick = () => {
+    setadd("1NGa7ytrUKKBANPmKaTd2Fohv5P3eemCas");
+    setCrypto("Bitcoin");
+    setvis(true);
+  };
+  const dogeclick = () => {
+    setadd("DRxXza5ZRZ4YVEJCRe3qdxyaPiDvt691rZ");
+    setCrypto("DogeCoin");
+    setvis(true);
+  };
+  const ethclick = () => {
+    setadd("0x16b0278a5a21ad0f7083893c6d24c5c88e29c604");
+    setCrypto("Ethereum");
+    setvis(true);
+  };
+  const onSubmit = () => {
+    setvis(false);
+  };
   return (
     <div>
+      {vis && <Modal crypto={crypto} address={add} onSubmit={onSubmit} />}
+
       <div className={style["go_back"]}>
         <a href="https://projectsakura.xyz">
           <div
@@ -41,7 +66,7 @@ const Contributor = () => {
       <main style={{ minHeight: "50vh" }}>
         <div class="progress-bg">
           <div class="progress-bar">
-            <h3 class="raised">$20&nbsp;raised </h3>
+            <h3 class="raised">$22&nbsp;raised </h3>
           </div>
 
           <h3 class="goal">Goal: $50</h3>
@@ -69,6 +94,40 @@ const Contributor = () => {
               Paypal
             </Button>
           </a>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            textAlign: "center",
+            marginTop: "30px",
+            justifyContent: "center",
+            gap: "20px",
+            flexWrap: "wrap",
+            alignItems: "center",
+          }}
+        >
+          <h1>Donate using Crypto :</h1>
+          <Button
+            danger
+            style={{ width: "150px", height: "40px" }}
+            onClick={ethclick}
+          >
+            Ethereum
+          </Button>
+          <Button
+            danger
+            style={{ width: "150px", height: "40px" }}
+            onClick={dogeclick}
+          >
+            DogeCoin
+          </Button>
+          <Button
+            danger
+            style={{ width: "150px", height: "40px" }}
+            onClick={bitclick}
+          >
+            Bitcoin
+          </Button>
         </div>
         <hr style={{ width: "80%", margin: "0 auto" }} width="1" size="500" />
         <div style={{ textAlign: "center", marginTop: "70px" }}>
