@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/donation/static/css/main.2b2726b9.chunk.css",
+    "main.js": "/donation/static/js/main.05e68b99.chunk.js",
+    "main.js.map": "/donation/static/js/main.05e68b99.chunk.js.map",
+    "runtime-main.js": "/donation/static/js/runtime-main.54a58af0.js",
+    "runtime-main.js.map": "/donation/static/js/runtime-main.54a58af0.js.map",
+    "static/css/2.70fefbbc.chunk.css": "/donation/static/css/2.70fefbbc.chunk.css",
+    "static/js/2.67f0b50f.chunk.js": "/donation/static/js/2.67f0b50f.chunk.js",
+    "static/js/2.67f0b50f.chunk.js.map": "/donation/static/js/2.67f0b50f.chunk.js.map",
+    "index.html": "/donation/index.html",
+    "static/css/2.70fefbbc.chunk.css.map": "/donation/static/css/2.70fefbbc.chunk.css.map",
+    "static/css/main.2b2726b9.chunk.css.map": "/donation/static/css/main.2b2726b9.chunk.css.map",
+    "static/js/2.67f0b50f.chunk.js.LICENSE.txt": "/donation/static/js/2.67f0b50f.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/donation/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/bootstrap.min.css": "/donation/static/media/glyphicons-halflings-regular.be810be3.woff2",
+    "static/media/logo.eae36173.png": "/donation/static/media/logo.eae36173.png",
+    "static/media/sakura_footer.f18563ea.svg": "/donation/static/media/sakura_footer.f18563ea.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54a58af0.js",
+    "static/css/2.70fefbbc.chunk.css",
+    "static/js/2.67f0b50f.chunk.js",
+    "static/css/main.2b2726b9.chunk.css",
+    "static/js/main.05e68b99.chunk.js"
+  ]
+}
