@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import style from "./contributors.module.css";
 import Image from "./logo.png";
+import Crypto from "./crypto.png"
+import Donate from "./donate.png"
+import Donator from "./donator.png"
 import AdComponent from "../AdComponent/AdComponent";
 import "./donation.css";
 import Card from "./Card";
@@ -35,7 +38,7 @@ const Contributor = () => {
       {vis && <Modal crypto={crypto} address={add} onSubmit={onSubmit} />}
 
       <div className={style["go_back"]}>
-        <a href="https://projectsakura.xyz">
+        <a className={style["header"]} href="https://projectsakura.xyz">
           <div
             style={{
               display: "flex",
@@ -66,7 +69,7 @@ const Contributor = () => {
       <main style={{ minHeight: "50vh" }}>
         <div class="progress-bg">
           <div class="progress-bar">
-            <h3 class="raised">$22&nbsp;raised </h3>
+            <h3 class="raised">$33&nbsp;raised </h3>
           </div>
 
           <h3 class="goal">Goal: $50</h3>
@@ -74,64 +77,63 @@ const Contributor = () => {
 
         <div
           style={{
-            display: "flex",
+            display: "block",
             textAlign: "center",
             marginTop: "30px",
             justifyContent: "center",
             gap: "20px",
-            flexWrap: "wrap",
             alignItems: "center",
           }}
         >
-          <h1>Methods of Donation:</h1>
+          <h1>Methods of Donation <img src={Donate} alt="donate" width="50vh" height="50vh"></img></h1>
+
           <a href="https://ko-fi.com/lordshen">
-            <Button danger style={{ width: "150px", height: "40px" }}>
+            <Button danger style={{ width: "150px", height: "40px", margin: "2vh" }}>
               Ko-fi
             </Button>
           </a>
           <a href="https://paypal.me/PriyanshuPandey?locale.x=en_GB">
-            <Button danger style={{ width: "150px", height: "40px" }}>
+            <Button danger style={{ width: "150px", height: "40px", margin: "2vh" }}>
               Paypal
             </Button>
           </a>
         </div>
         <div
           style={{
-            display: "flex",
+            display: "block",
             textAlign: "center",
             marginTop: "30px",
             justifyContent: "center",
             gap: "20px",
-            flexWrap: "wrap",
             alignItems: "center",
           }}
         >
-          <h1>Donate using Crypto :</h1>
+          <h1>Donate using Crypto <img src={Crypto} alt="crypto" width="50vh" height="50vh"></img></h1>
           <Button
             danger
-            style={{ width: "150px", height: "40px" }}
+            style={{ width: "150px", height: "40px", margin: "2vh" }}
             onClick={ethclick}
           >
             Ethereum
           </Button>
           <Button
             danger
-            style={{ width: "150px", height: "40px" }}
+            style={{ width: "150px", height: "40px", margin: "2vh" }}
             onClick={dogeclick}
           >
             DogeCoin
           </Button>
           <Button
             danger
-            style={{ width: "150px", height: "40px" }}
+            style={{ width: "150px", height: "40px", margin: "2vh" }}
             onClick={bitclick}
           >
             Bitcoin
           </Button>
         </div>
-        <hr style={{ width: "80%", margin: "0 auto" }} width="1" size="500" />
-        <div style={{ textAlign: "center", marginTop: "70px" }}>
-          <h1>Top Donators this month</h1>
+        <hr style={{ width: "80%", margin: "5vh auto" }} width="1" size="500" />
+        <div style={{ textAlign: "center" }}>
+          <h1>Top Donators this month <img src={Donator} alt="donator" width="50vh" height="50vh"></img></h1>
           <div
             style={{
               display: "flex",

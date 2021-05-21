@@ -99,7 +99,9 @@ main {
 .Sakura {
   color: #64b1f3;
 }
-
+.header{
+  text-decoration: none;
+}
 .spring {
   color: white;
   float: right;

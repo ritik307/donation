@@ -4,7 +4,8 @@ const Card = (props) => {
   return (
     <div
       style={{
-        boxShadow: "0px 4px 5px 0px rgba(0,0,0,0.75)",
+        backgroundColor:"#191919",
+        boxShadow: "0px 8px 16px 0px rgba(72, 127, 255, 0.1), 0px -8px 16px 0px rgba(72, 127, 255, 0.1)",
         display: "flex",
         width: "800px",
         textAlign: "center",

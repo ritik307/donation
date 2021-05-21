@@ -27,9 +27,10 @@ const useStyles = makeStyles((theme) => ({
   submitbutton: {
     width: "100%",
     height: 40,
-    backgroundColor: "lightgreen",
+    backgroundColor: "#337AB7",
     border: "0",
-    marginBottom: 20,
+    borderRadius: "5px",
+    marginBottom: "2vh",
   },
   danger: {
     alignItems: "center",
@@ -60,7 +61,7 @@ export default function ServerModal(props) {
           </p>
           <p
             id="server-modal-description"
-            style={{ color: "black", fontSize: "12px" }}
+            style={{ color: "white", fontSize: ".5em", backgroundColor: "black", padding: "1vh" }}
           >
             {props.address}
           </p>
