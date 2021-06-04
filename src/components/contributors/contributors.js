@@ -67,12 +67,12 @@ const Contributor = () => {
       </div>
 
       <main style={{ minHeight: "50vh" }}>
-        <div class="progress-bg">
-          <div class="progress-bar">
-            <h3 class="raised">$33&nbsp;raised </h3>
+        <div className="progress-bg">
+          <div className="progress-bar">
+            <h3 className="raised">$33&nbsp;raised </h3>
           </div>
 
-          <h3 class="goal">Goal: $50</h3>
+          <h3 className="goal">Goal: $50</h3>
         </div>
 
         <div
